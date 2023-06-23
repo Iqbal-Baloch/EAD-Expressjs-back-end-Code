@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%-include("navbar.ejs")%>
+    <div >
+        <label>
+            Product Name:
+            <%=product.name%>
+        </label><br>
+        <label>
+            Product Price:
+            <%=product.price%>
+        </label><br>
+        <label>
+            Product Quantity:
+            <%=product.qty%>
+        </label>
+        <br>
+        <label>
+            Product Manufacturer:
+            <%=product.manufacturer%>
+        </label>
+    </div>
+</body>
+</html>

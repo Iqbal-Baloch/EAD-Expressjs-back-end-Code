@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+</head>
+<body>
+    <%- include('navbar')%>
+    <ul>
+        <% for(let i = 0; i< products.length ;i++){ %> 
+            <li>
+                <a href="/product/<%=products[i]._id%>">
+                    <%=products[i].name %>,  Price: <%=products[i].price %>,  Qty: <%=products[i].qty %> Manufacturer: <%=products[i].manufacturer %> 
+                </a> 
+            </li>
+        <% } %>
+    </ul>
+    
+
+</body>
+</html>
